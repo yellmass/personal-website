@@ -1,16 +1,18 @@
-import React from 'react';
+import React from "react";
 
-import ppImage from "../../assets/pp.jpeg"
+import homeImage from "../../assets/homepage-hawaii.jpeg";
 
-import './home.styles.css'
+import "./home.styles.css";
+import { Link } from "react-router-dom";
 
 const Home = () => {
-    
-
   return (
-    <div className="home-container" >
-        <img src={ppImage} alt="home-img" />
-        <h1 className="intro-text" >Hi, I am Yilmaz</h1>
+    <div className="home-container">
+      <img className="home-img" src={homeImage} alt="home-img" />
+      <div classNAme="text-zone">
+        <h1 className="intro-text">Hi, <br />I am Yilmaz<br />A web developer</h1>
+        <Link to="/contact" >CONTACT ME</Link>
+      </div>
     </div>
   );
 };
